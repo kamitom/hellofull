@@ -1,7 +1,7 @@
 
+console.log(`show __dirname: ${__dirname}`)
 
-// console.log("hello, npm");
-
+const xPort = 3000
 const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
@@ -13,13 +13,12 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
-app.use(express.static('public'))
+// app.use(express.static('public'))
 
 app.use('/', indexRouter)
 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || xPort)
 
+const urlAddress = `http://localhost:${xPort}`
 
-
-
-console.log(`show __dirname: ${__dirname}`)
+console.log(`visit here: ${urlAddress}`)
