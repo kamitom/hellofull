@@ -1,7 +1,7 @@
 
 console.log(`show __dirname: ${__dirname}`)
 
-const xPort = 3000
+const xPort = 30001
 const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
