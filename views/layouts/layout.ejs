@@ -62,7 +62,7 @@
   .container .dispClock,
   .container {
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -75,9 +75,9 @@
     text-align: center;
   }
   .dispClock #time{
-    line-height: 85px;
+    line-height: 100px;
     color: #fff;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 600;
     letter-spacing: 1px;
     font-family: 'Orbitron', sans-serif;
@@ -98,11 +98,13 @@
             text-align: center;
         }
     </style>
+
+    <script src="../../js/test.js"></script>
 </head>
 
 <body>
 
-   <h1>ハックしないでください、私たちは弱いんです</h1>
+   <h1>** ハックしないでください、私たちは弱いんです **</h1>
     <%- body %>
 
     <script>
@@ -155,6 +157,7 @@ function currentTime()
 
 currentTime();  //calling currentTime() function to initiate the process
     </script>
+
 </body>
 
 </html>
